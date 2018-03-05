@@ -21,7 +21,6 @@
     (filter (lambda (y) (>= (car y) (cadr y)))
       (map (lambda (z) (list x z)) l)))
   (map (lambda (y) (make-pairs y l)) l))
-;  (map (lambda (y) (cons y (make-pairs y l))) l))
 
 (define (leaf? tree) (and (number? (car tree)) (number? (cadr tree))))
 
